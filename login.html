@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LH Games - login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<header class="header container-fluid">
+    <a href=""><img src="img/logo 2.jpeg" alt="logo do site"></a>
+    <nav id="nav">
+        <button id="btn-mobile">Menu
+            <span id="icon-menu"></span>
+        </button>
+        <ul class="menu">
+            <li><a href="">Promoções</a></li>
+            <li><a href="">Consoles</a></li>
+            <li><a href="">Jogos</a>
+                <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Action</a></li>
+                   <li><a class="dropdown-item" href="#">Another action</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>                
+            </li>
+        </ul>
+    </nav>
+ 
+</header>
+
+<div class="container" id="container">
+
+    <div class="forms-container entrar">
+
+        <div class="entrar-inscrever">
+
+            <form class="form-login">
+
+                <h2 class="title">Login</h2>
+
+                <div class="input-field">
+                   <i class="fas fa-user"></i>
+                   <input id="user" name="user" required="required" type="text" placeholder="nome" />
+                 </div> 
+
+                 <div class="input-field"> 
+                   <i class="fas fa-lock"></i>
+                   <input id="pass" name="pass" required="required" type="password" placeholder="senha"/>
+                 </div>                
+                <input type="button" value="Login" class="btn solid" id="bt-login" onclick="login()" />                 
+
+           </form>
+
+            <form class="form-cadastro">
+
+                <h2 class="title">Cadastrar</h2>
+
+                <div class="input-field">
+                   <i class="fas fa-user"></i>
+                   <input id="nome" name="nome" required="required" type="text" placeholder="nome" />
+                 </div>               
+
+                 <div class="input-field"> 
+                   <i class="fas fa-envelope"></i>
+                   <input id="email" name="email" required="required" type="email" placeholder="email"/>
+                 </div>
+
+                 <div class="input-field"> 
+                   <i class="fas fa-lock"></i>
+                   <input id="pass" name="pass" required="required" type="password" placeholder="senha"/>
+                 </div>               
+                <input type="button" value="Cadastrar" class="btn solid" id="bt-cadastrar" onclick="cadastro()" />              
+
+           </form>
+            
+        </div>
+
+
+    </div> 
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Você é novo por aqui?</h3>
+                <p>Crie sua conta.</p>
+                <button class="btn transparent" id="btn-cadastrar">Cadastrar</button>
+            </div>
+            <img src="img/log.svg" class="image" alt="">
+        </div>
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Bem vindo de volta</h3>
+                <p>Digite o seus dados para entrar na sua conta.</p>
+                <button class="btn transparent" id="btn-login">Logar</button>
+            </div>
+            <img src="img/register.svg" class="image" alt="">
+        </div>
+    </div>   
+
+</div>
+    
+    <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery-script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
